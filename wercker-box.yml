@@ -1,7 +1,7 @@
 name: box
 version: 0.0.1
 type: main
-inherits: wercker/golang
+inherits: wercker/ubuntu12.04-webessentials@0.0.3
 platform: ubuntu@12.04
 description: wercker box for rethinkdb an open source distributed database
 packages:
