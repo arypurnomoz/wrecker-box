@@ -6,4 +6,6 @@ build:
         # Execute a custom script step.
         - script:
             name: middleman build
-            code: wget https://foundationdb.com/downloads/f-afxudaxbxuuo/I_accept_the_FoundationDB_Community_License_Agreement/key-value-store/3.0.5/foundationdb-clients_3.0.5-1_amd64.deb foundationdb-clients.deb ; sudo dpkg -i foundationdb-clients.deb
+            code: |
+                wget https://foundationdb.com/downloads/f-afxudaxbxuuo/I_accept_the_FoundationDB_Community_License_Agreement/key-value-store/3.0.5/foundationdb-clients_3.0.5-1_amd64.deb -O foundationdb-clients.deb 
+                sudo dpkg -i foundationdb-clients.deb
