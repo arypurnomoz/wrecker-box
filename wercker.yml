@@ -1,0 +1,11 @@
+box: wercker/golang
+build:
+  steps:
+    # Execute the bundle install step, a step provided by wercker
+    - bundle-install
+    # Execute a custom script step.
+    - script:
+      name: middleman build
+      code: |-
+        sudo add-apt-repository ppa:rethinkdb/ppa -y
+        wget https://foundationdb.com/downloads/f-afxudaxbxuuo/I_accept_the_FoundationDB_Community_License_Agreement/key-value-store/3.0.5/foundationdb-clients_3.0.5-1_amd64.deb foundationdb-clients.deb
