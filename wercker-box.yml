@@ -13,7 +13,6 @@ keywords:
     - database
     - json
 script: |
-    sudo add-apt-repository ppa:rethinkdb/ppa -y
-  wget https://foundationdb.com/downloads/f-afxudaxbxuuo/I_accept_the_FoundationDB_Community_License_Agreement/key-value-store/3.0.5/foundationdb-clients_3.0.5-1_amd64.deb foundationdb-clients.deb
-  sudo dpkg -i foundationdb-clients.deb
+    wget https://foundationdb.com/downloads/f-afxudaxbxuuo/I_accept_the_FoundationDB_Community_License_Agreement/key-value-store/3.0.5/foundationdb-clients_3.0.5-1_amd64.deb foundationdb-clients.deb
+    sudo dpkg -i foundationdb-clients.deb
   
