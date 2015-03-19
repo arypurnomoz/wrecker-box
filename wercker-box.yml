@@ -1,5 +1,5 @@
 name: box
-version: 0.0.2
+version: 0.0.3
 type: main
 inherits: wercker/golang
 platform: ubuntu@12.04
