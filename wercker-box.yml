@@ -4,5 +4,6 @@ type: main
 inherits: wercker/ubuntu12.04-webessentials@0.0.3
 platform: ubuntu@12.04
 script: |
-  wget https://foundationdb.com/downloads/f-afxudaxbxuuo/I_accept_the_FoundationDB_Community_License_Agreement/key-value-store/3.0.5/foundationdb-clients_3.0.5-1_amd64.deb -O foundationdb-clients.deb
-  sudo dpkg -i foundationdb-clients.deb
+    wget https://foundationdb.com/downloads/f-afxudaxbxuuo/I_accept_the_FoundationDB_Community_License_Agreement/key-value-store/3.0.5/foundationdb-clients_3.0.5-1_amd64.deb -O foundationdb-clients.deb 
+    wget https://foundationdb.com/downloads/f-afxudaxbxuuo/I_accept_the_FoundationDB_Community_License_Agreement/key-value-store/3.0.5/foundationdb-server_3.0.5-1_amd64.deb -O foundationdb-server.deb
+    sudo dpkg -i foundationdb-clients.deb foundationdb-server.deb
